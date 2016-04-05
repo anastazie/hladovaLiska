@@ -1,0 +1,24 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+
+
+<div class="list" ng-controller="stravenky">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Hodnota stravenky</span>
+    <input type="number" ng-model="stravenka" placeholder="Kč">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Cena na účtence</span>
+    <input type="number" ng-model="total" placeholder="Kč">
+  </label>
+
+  <div class="item">
+    <div ng-if="!isNumber(stravenek_ks)">
+      <label class="">Zaplať stravenkami {{ stravenek_ks }}&thinsp;x&thinsp;{{stravenka}}&thinsp;Kč a hotově {{cash}}&thinsp;Kč</label>
+    </div>
+  </div>
+</div>
+
+<img src="img/liska.png" style="margin: auto; display: block; ">
+  </ion-content>
+</ion-view>
